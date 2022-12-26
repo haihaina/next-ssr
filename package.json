@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next",
+    "start": "next start -p $PORT",
+    "build": "next build && PORT=3001 npm start",
     "debugger": "cross-env NODE_OPTIONS='--inspect' next dev",
-    "build": "next build",
     "build-pro": "next build && next export",
     "build-profile": "next build --profile",
-    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
